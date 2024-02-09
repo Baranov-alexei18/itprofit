@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItProfit</title>
+</head>
+<body>
+    <form id="form">
+        <p id="status_submit"></p>
+        <div class="form_wrapper">
+            <div>
+                <label for="name">Имя:</label>
+                <br> 
+                <input id="name" name="name" placeholder="Имя">
+                <div class="error-message" id="name-error"></div>
+              </div>
+              <div>
+                <label for="email">E-mail:</label>
+                <br>
+                <input id="email" placeholder="E-mail" name="email">
+                <div class="error-message" id="email-error"></div>
+              </div>
+              <div>
+                <label for="phone">Телефон:</label>
+                <br>
+                <input id="phone" placeholder="Телефон" name="phone">
+                <div class="error-message" id="phone-error"></div>
+              </div>
+              <div>
+                <label for="message">Сообщение:</label>
+                <br>
+                <textarea id="message" name="message"></textarea>
+                <div class="error-message" id="message-error"></div>
+              </div>
+        </div>
+       
+        <button type="submit">Отправить</button>
+      </form>
+
+      <br> 
+      <button id="btnModal">Открыть модальное окно</button>
+
+      <div class="modal_wrapper">
+          <div class="modal">
+              <div class="modal_header">
+                  <h2>Это модальное окно</h2>
+                  <button id="closeModalButton">Назад</button>
+              </div>
+              <div class="modal_body">
+                  <p>Текст модального окна.</p>
+              </div>
+          </div>
+      </div>
+
+      <script src="bundle.js"></script>
+</body>
+</html>
